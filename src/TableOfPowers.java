@@ -20,6 +20,11 @@ public class TableOfPowers {
 		while (keepGoing) {
 
 			System.out.println("Enter an integer: ");
+
+			while (!scan.hasNextDouble()) {
+				System.out.println("You must enter an integer. Please try again.");
+				scan.next();
+			}
 			userNumber = scan.nextInt();
 
 			printTableOfPowers(userNumber);
