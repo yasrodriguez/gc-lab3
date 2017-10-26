@@ -9,6 +9,12 @@ import java.util.Scanner;
  */
 public class TableOfPowers {
 
+	/**
+	 * Gets a number from the user as long as they want to continue. It passes the
+	 * number to a function that performs the calculations and printing.
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		boolean keepGoing = true;
@@ -40,6 +46,13 @@ public class TableOfPowers {
 		scan.close();
 	}
 
+	/**
+	 * Calculates the square and cubed for 1 to the number provided by the user, and
+	 * prints the table.
+	 * 
+	 * @param number
+	 *            the last number to print on the table
+	 */
 	public static void printTableOfPowers(int number) {
 
 		System.out.printf("%-10s %-10s %-10s\n", "Number", "Squared", "Cubed");
